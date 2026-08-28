@@ -1,0 +1,7 @@
+{
+  "name": "openspec-brainstorming",
+  "version": "1.0.0",
+  "description": "Turn a rough idea into an approved, validated OpenSpec proposal.",
+  "author": { "name": "Gustavo Meilus" },
+  "skills": "./skills/"
+}

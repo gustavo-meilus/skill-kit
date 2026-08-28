@@ -1,0 +1,8 @@
+interface:
+  display_name: OpenSpec Brainstorming
+  short_description: Turn a rough idea into an approved, validated OpenSpec change
+  default_prompt: Use $openspec-brainstorming to normalize this idea into a focused behavior contract, get approval, and produce a validated OpenSpec proposal without implementing it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

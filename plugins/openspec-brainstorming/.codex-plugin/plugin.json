@@ -1,0 +1,23 @@
+{
+  "name": "openspec-brainstorming",
+  "version": "1.0.0",
+  "description": "Turn a rough idea into an approved, validated OpenSpec proposal.",
+  "author": {
+    "name": "Gustavo Meilus",
+    "email": "gmeilus@outlook.com",
+    "url": "https://github.com/gustavo-meilus"
+  },
+  "homepage": "https://github.com/gustavo-meilus/skill-kit",
+  "repository": "https://github.com/gustavo-meilus/skill-kit",
+  "keywords": ["openspec", "planning", "specification"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenSpec Brainstorming",
+    "shortDescription": "Turn an idea into a validated OpenSpec change.",
+    "longDescription": "Normalize a rough idea, get approval, and produce a validated OpenSpec proposal without implementing it.",
+    "developerName": "Gustavo Meilus",
+    "category": "Productivity",
+    "capabilities": ["Skills"],
+    "defaultPrompt": ["Turn this idea into an approved OpenSpec change."]
+  }
+}

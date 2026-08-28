@@ -1,0 +1,9 @@
+{
+  "name": "more-with-less-engineering",
+  "version": "1.0.0",
+  "description": "Minimum-sufficient engineering workflow for project development.",
+  "author": {
+    "name": "Gustavo Meilus"
+  },
+  "skills": "./skills/"
+}

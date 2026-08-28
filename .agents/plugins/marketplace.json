@@ -1,0 +1,44 @@
+{
+  "name": "skill-kit",
+  "interface": {
+    "displayName": "Skill Kit"
+  },
+  "plugins": [
+    {
+      "name": "more-with-less-engineering",
+      "source": {
+        "source": "local",
+        "path": "./plugins/more-with-less-engineering"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cutting-a-release",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cutting-a-release"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "openspec-brainstorming",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openspec-brainstorming"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

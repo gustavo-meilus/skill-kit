@@ -1,0 +1,46 @@
+{
+  "description": "More With Less: persist minimum-sufficient engineering policy and gate completion on project verification when configured.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/env python3 \"$PLUGIN_ROOT/hooks/more_with_less_hook.py\"",
+            "commandWindows": "py -3 \"%PLUGIN_ROOT%\\hooks\\more_with_less_hook.py\"",
+            "timeout": 5,
+            "additionalContextLimit": 1200,
+            "statusMessage": "Loading More With Less policy"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/env python3 \"$PLUGIN_ROOT/hooks/more_with_less_hook.py\"",
+            "commandWindows": "py -3 \"%PLUGIN_ROOT%\\hooks\\more_with_less_hook.py\"",
+            "timeout": 5,
+            "additionalContextLimit": 1200
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/env python3 \"$PLUGIN_ROOT/hooks/more_with_less_hook.py\"",
+            "commandWindows": "py -3 \"%PLUGIN_ROOT%\\hooks\\more_with_less_hook.py\"",
+            "timeout": 300,
+            "statusMessage": "Running More With Less completion gate"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "cutting-a-release",
+  "version": "1.0.0",
+  "description": "Prepare, publish, verify, or recover a Git repository release.",
+  "author": { "name": "Gustavo Meilus" },
+  "skills": "./skills/"
+}

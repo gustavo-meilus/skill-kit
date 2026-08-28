@@ -1,0 +1,23 @@
+{
+  "name": "cutting-a-release",
+  "version": "1.0.0",
+  "description": "Prepare, publish, verify, or recover a Git repository release.",
+  "author": {
+    "name": "Gustavo Meilus",
+    "email": "gmeilus@outlook.com",
+    "url": "https://github.com/gustavo-meilus"
+  },
+  "homepage": "https://github.com/gustavo-meilus/skill-kit",
+  "repository": "https://github.com/gustavo-meilus/skill-kit",
+  "keywords": ["release", "git", "publishing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Cutting a Release",
+    "shortDescription": "Evidence-based releases for Git projects.",
+    "longDescription": "Prepare, publish, verify, or recover a Git release through repository-native controls.",
+    "developerName": "Gustavo Meilus",
+    "category": "Productivity",
+    "capabilities": ["Skills"],
+    "defaultPrompt": ["Prepare a safe release for this repository."]
+  }
+}

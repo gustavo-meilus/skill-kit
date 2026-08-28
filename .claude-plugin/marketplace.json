@@ -1,0 +1,33 @@
+{
+  "name": "skill-kit",
+  "owner": {
+    "name": "Gustavo Meilus",
+    "email": "gmeilus@outlook.com"
+  },
+  "metadata": {
+    "description": "Small, useful skills for coding agents."
+  },
+  "plugins": [
+    {
+      "name": "more-with-less-engineering",
+      "source": "./plugins/more-with-less-engineering",
+      "description": "Minimum-sufficient engineering for project development.",
+      "category": "productivity",
+      "tags": ["engineering", "simplicity", "verification"]
+    },
+    {
+      "name": "cutting-a-release",
+      "source": "./plugins/cutting-a-release",
+      "description": "Prepare, publish, verify, or recover a Git repository release.",
+      "category": "productivity",
+      "tags": ["release", "git", "publishing"]
+    },
+    {
+      "name": "openspec-brainstorming",
+      "source": "./plugins/openspec-brainstorming",
+      "description": "Turn a rough idea into an approved, validated OpenSpec proposal.",
+      "category": "productivity",
+      "tags": ["openspec", "planning", "specification"]
+    }
+  ]
+}

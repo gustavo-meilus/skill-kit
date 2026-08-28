@@ -1,0 +1,6 @@
+interface:
+  display_name: "More With Less Engineering"
+  short_description: "Minimum-sufficient engineering for project development"
+  default_prompt: "Apply the More With Less engineering playbook to this project task."
+policy:
+  allow_implicit_invocation: true
