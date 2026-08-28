@@ -1,0 +1,9 @@
+{
+  "name": "ai-fingerprint-mitigator",
+  "version": "1.0.0",
+  "description": "Edit prose to reduce formulaic AI-style artifacts while preserving facts, provenance, and voice.",
+  "author": {
+    "name": "Gustavo Meilus"
+  },
+  "skills": "./skills/"
+}

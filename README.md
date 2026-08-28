@@ -22,8 +22,14 @@ For local development, clone the repo and use `.` in place of `gustavo-meilus/sk
 | `cutting-a-release` | Guides evidence-based Git releases from preparation through verification. |
 | `openspec-brainstorming` | Converts a rough idea into an approved, validated OpenSpec proposal. |
 | `engineering-harness-adaptive` | Full adaptive workflow: a shared skill, deterministic completion gate, and read-only roles. |
+| `lite-writing` | Produces concise, clear prose without losing necessary meaning or flattening style-sensitive text. |
+| `ai-fingerprint-mitigator` | Reduces formulaic AI-style prose artifacts while preserving facts, provenance, and the author's voice. |
 
 The skill is available as `$more-with-less` in Codex and `/s-kit:more-with-less` in Claude Code. Copilot discovers it from the installed plugin.
+
+`lite-writing` is available as `$lite-writing` in Codex and `/lite-writing:lite-writing` in Claude Code. Copilot discovers it from the installed plugin.
+
+`ai-fingerprint-mitigator` is available as `$ai-fingerprint-mitigator` in Codex and `/ai-fingerprint-mitigator:ai-fingerprint-mitigator` in Claude Code. It is a style editor, not an AI-detector-evasion tool.
 
 `engineering-harness-adaptive` is available as `$engineering-discipline` in Codex and `/engineering-harness-adaptive:engineering-discipline` in Claude Code. Claude Code and Copilot CLI load its roles and completion gate directly. Codex loads its skill and trusted hook; the equivalent Codex role profiles are bundled under `profiles/codex` for manual opt-in because plugins do not load custom agent profiles. The hook requires Python 3 and uses the project's normal verification command; copy its template only to override detection.
 

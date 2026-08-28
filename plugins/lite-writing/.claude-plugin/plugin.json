@@ -1,0 +1,9 @@
+{
+  "name": "lite-writing",
+  "version": "1.0.0",
+  "description": "Concise, clear writing that preserves meaning, grammar, and style-sensitive passages.",
+  "author": {
+    "name": "Gustavo Meilus"
+  },
+  "skills": "./skills/"
+}

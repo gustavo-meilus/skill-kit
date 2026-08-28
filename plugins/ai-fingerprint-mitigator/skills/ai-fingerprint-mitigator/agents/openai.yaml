@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Fingerprint Mitigator"
+  short_description: "Reduce formulaic AI-style prose artifacts"
+  default_prompt: "Use $ai-fingerprint-mitigator to make this prose less formulaic and more faithful to the author's voice without changing facts or making detector-evasion claims."

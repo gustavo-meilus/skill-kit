@@ -51,6 +51,30 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "lite-writing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lite-writing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ai-fingerprint-mitigator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-fingerprint-mitigator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lite Writing"
+  short_description: "Write concise, clear documents and prose"
+  default_prompt: "Use $lite-writing to make this document concise, clear, and complete without flattening any requested narrative or stylistic voice."

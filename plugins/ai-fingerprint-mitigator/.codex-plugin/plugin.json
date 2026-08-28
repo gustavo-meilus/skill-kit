@@ -1,0 +1,23 @@
+{
+  "name": "ai-fingerprint-mitigator",
+  "version": "1.0.0",
+  "description": "Edit prose to reduce formulaic AI-style artifacts while preserving facts, provenance, and voice.",
+  "author": {
+    "name": "Gustavo Meilus",
+    "email": "gmeilus@outlook.com",
+    "url": "https://github.com/gustavo-meilus"
+  },
+  "homepage": "https://github.com/gustavo-meilus/skill-kit",
+  "repository": "https://github.com/gustavo-meilus/skill-kit",
+  "keywords": ["writing", "editing", "prose", "authorship"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Fingerprint Mitigator",
+    "shortDescription": "Reduce formulaic AI-style prose artifacts.",
+    "longDescription": "A style editor that reduces formulaic AI-style prose artifacts while preserving facts, provenance, and the author's established voice.",
+    "developerName": "Gustavo Meilus",
+    "category": "Productivity",
+    "capabilities": ["Skills"],
+    "defaultPrompt": ["Revise this prose to reduce formulaic patterns without changing facts or provenance."]
+  }
+}

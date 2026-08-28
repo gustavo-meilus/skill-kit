@@ -1,0 +1,23 @@
+{
+  "name": "lite-writing",
+  "version": "1.0.0",
+  "description": "Concise, clear writing that preserves meaning, grammar, and style-sensitive passages.",
+  "author": {
+    "name": "Gustavo Meilus",
+    "email": "gmeilus@outlook.com",
+    "url": "https://github.com/gustavo-meilus"
+  },
+  "homepage": "https://github.com/gustavo-meilus/skill-kit",
+  "repository": "https://github.com/gustavo-meilus/skill-kit",
+  "keywords": ["writing", "documentation", "clarity", "concise"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lite Writing",
+    "shortDescription": "Concise, clear writing without lost meaning.",
+    "longDescription": "A writing contract for concise, clear prose that preserves necessary detail, grammar, and style-sensitive passages.",
+    "developerName": "Gustavo Meilus",
+    "category": "Productivity",
+    "capabilities": ["Skills"],
+    "defaultPrompt": ["Make this document concise, clear, and complete."]
+  }
+}

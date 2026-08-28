@@ -35,6 +35,20 @@
       "description": "Adaptive engineering discipline with deterministic verification and read-only specialist roles.",
       "category": "productivity",
       "tags": ["engineering", "verification", "agents", "adaptive-routing"]
+    },
+    {
+      "name": "lite-writing",
+      "source": "./plugins/lite-writing",
+      "description": "Concise, clear prose that preserves necessary detail and style-sensitive passages.",
+      "category": "productivity",
+      "tags": ["writing", "documentation", "clarity", "concise"]
+    },
+    {
+      "name": "ai-fingerprint-mitigator",
+      "source": "./plugins/ai-fingerprint-mitigator",
+      "description": "Reduce formulaic AI-style prose artifacts while preserving facts, provenance, and voice.",
+      "category": "productivity",
+      "tags": ["writing", "editing", "prose", "authorship"]
     }
   ]
 }
