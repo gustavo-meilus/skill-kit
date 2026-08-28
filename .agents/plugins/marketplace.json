@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "more-with-less-engineering",
+      "name": "s-kit",
       "source": {
         "source": "local",
-        "path": "./plugins/more-with-less-engineering"
+        "path": "./plugins/s-kit"
       },
       "policy": {
         "installation": "AVAILABLE",

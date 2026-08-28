@@ -1,6 +1,6 @@
 {
-  "name": "more-with-less-engineering",
-  "version": "1.0.0",
+  "name": "s-kit",
+  "version": "1.0.0+codex.20260828192512",
   "description": "Minimum-sufficient engineering workflow for Codex: KISS/YAGNI/least-power, progressive context, bounded agency, risk-proportional SDD, and strong verification.",
   "author": {
     "name": "Gustavo Meilus",
@@ -9,7 +9,11 @@
   },
   "homepage": "https://github.com/gustavo-meilus/skill-kit",
   "repository": "https://github.com/gustavo-meilus/skill-kit",
-  "keywords": ["engineering", "simplicity", "verification"],
+  "keywords": [
+    "engineering",
+    "simplicity",
+    "verification"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "More With Less Engineering",
@@ -17,7 +21,10 @@
     "longDescription": "A practical playbook for keeping project work minimal without weakening correctness, security, or verification.",
     "developerName": "Gustavo Meilus",
     "category": "Productivity",
-    "capabilities": ["Skills", "Hooks"],
+    "capabilities": [
+      "Skills",
+      "Hooks"
+    ],
     "defaultPrompt": [
       "Apply More With Less to this project task."
     ]
