@@ -1,0 +1,19 @@
+{
+  "name": "engineering-harness-adaptive",
+  "version": "1.0.0",
+  "description": "Adaptive engineering discipline with deterministic verification and risk-scaled read-only roles.",
+  "author": { "name": "Gustavo Meilus", "email": "gmeilus@outlook.com", "url": "https://github.com/gustavo-meilus" },
+  "homepage": "https://github.com/gustavo-meilus/skill-kit",
+  "repository": "https://github.com/gustavo-meilus/skill-kit",
+  "keywords": ["engineering", "verification", "adaptive-routing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Adaptive Engineering Harness",
+    "shortDescription": "Risk-scaled engineering with deterministic verification.",
+    "longDescription": "A project-level engineering discipline with a shared skill, completion gate, and read-only roles for Claude Code and Copilot CLI.",
+    "developerName": "Gustavo Meilus",
+    "category": "Productivity",
+    "capabilities": ["Skills", "Hooks"],
+    "defaultPrompt": ["Apply the adaptive engineering discipline to this software task."]
+  }
+}

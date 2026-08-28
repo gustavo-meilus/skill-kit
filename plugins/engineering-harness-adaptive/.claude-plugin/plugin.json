@@ -1,0 +1,14 @@
+{
+  "name": "engineering-harness-adaptive",
+  "version": "1.0.0",
+  "description": "Adaptive engineering discipline with deterministic verification and risk-scaled read-only roles.",
+  "author": { "name": "Gustavo Meilus" },
+  "skills": "./skills/",
+  "agents": [
+    "./claude-agents/engineering-scout.md",
+    "./claude-agents/engineering-planner.md",
+    "./claude-agents/engineering-reviewer.md",
+    "./claude-agents/engineering-specialist.md"
+  ],
+  "hooks": "./hooks/claude-hooks.json"
+}

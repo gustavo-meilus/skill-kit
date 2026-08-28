@@ -1,0 +1,7 @@
+{
+  "verify_command": null,
+  "require_verifier_for_code_changes": true,
+  "allow_test_only_fallback": false,
+  "verification_timeout_seconds": 600,
+  "max_output_chars": 12000
+}
