@@ -16,9 +16,9 @@ For local development, clone the repo and use `.` in place of `gustavo-meilus/sk
 
 ## Included
 
-| Plugin | What it does |
+| Skill | What it does |
 | --- | --- |
-| `s-kit` | Helps project work stay minimal without weakening correctness, security, or verification. |
+| `more-with-less-engineering` | Helps project work stay minimal without weakening correctness, security, or verification. |
 | `cutting-a-release` | Guides evidence-based Git releases from preparation through verification. |
 | `openspec-brainstorming` | Converts a rough idea into an approved, validated OpenSpec proposal. |
 | `engineering-harness-adaptive` | Full adaptive workflow: a shared skill, deterministic completion gate, and read-only roles. |
