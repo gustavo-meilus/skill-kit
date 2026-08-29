@@ -5,7 +5,7 @@
     "email": "gmeilus@outlook.com"
   },
   "metadata": {
-    "description": "Small, useful skills for coding agents."
+    "description": "Cross-agent skills and workflow plugins for disciplined engineering, planning, release, and writing."
   },
   "plugins": [
     {

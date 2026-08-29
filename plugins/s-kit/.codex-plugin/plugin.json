@@ -16,7 +16,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "More With Less Engineering",
+    "displayName": "More With Less",
     "shortDescription": "Minimum-sufficient engineering for project work.",
     "longDescription": "A practical playbook for keeping project work minimal without weakening correctness, security, or verification.",
     "developerName": "Gustavo Meilus",
