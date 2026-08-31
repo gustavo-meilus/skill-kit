@@ -10,6 +10,7 @@ import tempfile
 import unittest
 
 HOOK = Path(__file__).resolve().parents[1] / "hooks" / "more_with_less_hook.py"
+HOOK_MANIFEST = HOOK.parent / "hooks.json"
 
 
 def call_hook(payload: dict, cwd: Path, env: dict[str, str] | None = None) -> dict:
@@ -32,6 +33,13 @@ def call_hook(payload: dict, cwd: Path, env: dict[str, str] | None = None) -> di
 
 
 class HookTests(unittest.TestCase):
+    def test_windows_command_uses_powershell_plugin_root(self) -> None:
+        manifest = json.loads(HOOK_MANIFEST.read_text(encoding="utf-8"))
+        for event in ("SessionStart", "SubagentStart", "Stop"):
+            command = manifest["hooks"][event][0]["hooks"][0]["commandWindows"]
+            self.assertIn("$env:PLUGIN_ROOT", command)
+            self.assertNotIn("%PLUGIN_ROOT%", command)
+
     def make_repo(self) -> Path:
         td = tempfile.TemporaryDirectory()
         self.addCleanup(td.cleanup)
