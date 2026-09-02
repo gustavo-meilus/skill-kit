@@ -1,0 +1,23 @@
+{
+  "name": "relentless-web-researcher",
+  "version": "1.0.1",
+  "description": "Current, evidence-backed web research for topic and tool specialization.",
+  "author": {
+    "name": "Gustavo Meilus",
+    "email": "gmeilus@outlook.com",
+    "url": "https://github.com/gustavo-meilus"
+  },
+  "homepage": "https://github.com/gustavo-meilus/skill-kit",
+  "repository": "https://github.com/gustavo-meilus/skill-kit",
+  "keywords": ["research", "web", "evidence", "comparison"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Relentless Web Researcher",
+    "shortDescription": "Deep, current web research with evidence.",
+    "longDescription": "A research workflow for current, evidence-backed answers and practical comparisons.",
+    "developerName": "Gustavo Meilus",
+    "category": "Productivity",
+    "capabilities": ["Skills"],
+    "defaultPrompt": ["Research this topic deeply with current, authoritative sources."]
+  }
+}

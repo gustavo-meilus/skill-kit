@@ -23,3 +23,17 @@ Skill Kit is packaged for Claude Code, Codex, and Copilot CLI. The checked-in ma
 | Claude Code | — | Not yet recorded | Not yet recorded | Not yet recorded | Not yet recorded | Pending |
 | Codex | — | Not yet recorded | Not yet recorded | Not yet recorded | Not yet recorded | Pending |
 | Copilot CLI | — | Not yet recorded | Not yet recorded | Not yet recorded | Not yet recorded | Pending |
+
+## Codex clean-host procedure
+
+Run this in a clean Codex environment, then record the observed version and results in the table above:
+
+```text
+codex --version
+codex plugin marketplace add gustavo-meilus/skill-kit
+codex plugin add relentless-web-researcher@skill-kit
+codex plugin list
+codex plugin remove relentless-web-researcher@skill-kit
+```
+
+The current Codex row remains pending until this exact flow is observed in a clean environment.
