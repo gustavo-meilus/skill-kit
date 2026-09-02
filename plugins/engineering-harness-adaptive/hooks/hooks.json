@@ -1,7 +1,7 @@
 {
   "description": "Adaptive Engineering Harness lifecycle hooks for Codex.",
   "hooks": {
-    "SessionStart": [{ "matcher": "startup|resume|clear|compact", "hooks": [{ "type": "command", "command": "python3 \"$PLUGIN_ROOT/hooks/session_baseline.py\"", "commandWindows": "%PLUGIN_ROOT%\\hooks\\codex-lifecycle.cmd baseline", "timeout": 15, "statusMessage": "Recording engineering harness baseline" }] }],
-    "Stop": [{ "hooks": [{ "type": "command", "command": "python3 \"$PLUGIN_ROOT/hooks/stop_gate.py\"", "commandWindows": "%PLUGIN_ROOT%\\hooks\\codex-lifecycle.cmd gate", "timeout": 630, "statusMessage": "Running engineering verification gate" }] }]
+    "SessionStart": [{ "matcher": "startup|resume|clear|compact", "hooks": [{ "type": "command", "command": "python3 \"$PLUGIN_ROOT/hooks/session_baseline.py\"", "commandWindows": "& \"$env:PLUGIN_ROOT\\hooks\\codex-lifecycle.cmd\" baseline", "timeout": 15, "statusMessage": "Recording engineering harness baseline" }] }],
+    "Stop": [{ "hooks": [{ "type": "command", "command": "python3 \"$PLUGIN_ROOT/hooks/stop_gate.py\"", "commandWindows": "& \"$env:PLUGIN_ROOT\\hooks\\codex-lifecycle.cmd\" gate", "timeout": 630, "statusMessage": "Running engineering verification gate" }] }]
   }
 }

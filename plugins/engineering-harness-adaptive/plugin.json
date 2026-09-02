@@ -1,6 +1,6 @@
 {
   "name": "engineering-harness-adaptive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adaptive engineering discipline with deterministic verification and risk-scaled read-only roles.",
   "author": { "name": "Gustavo Meilus" },
   "skills": "./skills/",
