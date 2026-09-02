@@ -1,0 +1,9 @@
+{
+  "name": "relentless-web-researcher",
+  "version": "1.0.0",
+  "description": "Current, evidence-backed web research for topic and tool specialization.",
+  "author": {
+    "name": "Gustavo Meilus"
+  },
+  "skills": "./skills/"
+}

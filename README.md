@@ -35,6 +35,7 @@ broad cleanup                required verification
 | --- | --- | --- |
 | [More With Less](plugins/s-kit/skills/more-with-less/SKILL.md) | Minimum-sufficient engineering without weakening correctness or verification. | Skill; optional Codex completion hook |
 | [Adaptive Engineering Harness](plugins/engineering-harness-adaptive/skills/engineering-discipline/SKILL.md) | Risk-scaled engineering work that benefits from deterministic verification or isolated review. | Skill, hook, and host-specific roles |
+| [Relentless Web Researcher](plugins/relentless-web-researcher/skills/relentless-web-researcher/SKILL.md) | Deep, current research on a topic or tool with evidence and practical comparisons. | Instruction-only skill |
 
 ### SHIP
 
@@ -64,7 +65,7 @@ Add the marketplace once, then install the skill that matches the job.
 
 For local development, clone this repository and use `.` in place of `gustavo-meilus/skill-kit`. To refresh a Git marketplace, use `claude plugin marketplace update skill-kit`, `codex plugin marketplace upgrade skill-kit`, or `copilot plugin marketplace update skill-kit`, then update the plugin if prompted.
 
-The installed entry points are host-specific. Codex uses `$more-with-less`, `$lite-writing`, `$ai-fingerprint-mitigator`, and `$engineering-discipline`; Claude Code uses namespaced slash commands; Copilot discovers skills from the installed plugin. See [HOSTS.md](docs/HOSTS.md) for exact packaged behavior and current verification status.
+The installed entry points are host-specific. Codex uses `$more-with-less`, `$lite-writing`, `$ai-fingerprint-mitigator`, `$relentless-web-researcher`, and `$engineering-discipline`; Claude Code uses namespaced slash commands; Copilot discovers skills from the installed plugin. See [HOSTS.md](docs/HOSTS.md) for exact packaged behavior and current verification status.
 
 ## How Skill Kit works
 
@@ -80,7 +81,7 @@ The collection is deliberately mixed: some jobs only need a compact method; othe
 
 ## Proof, not promises
 
-The repository currently ships six separately installable plugins through its Claude Code and Codex marketplace manifests. The Adaptive Engineering Harness includes executable hook files and host-specific role definitions. These are structural facts, not claims that installation makes an agent universally faster or more correct.
+The repository currently ships seven separately installable plugins through its Claude Code and Codex marketplace manifests. The Adaptive Engineering Harness includes executable hook files and host-specific role definitions. These are structural facts, not claims that installation makes an agent universally faster or more correct.
 
 Before a public launch, maintainers should record clean-install results for each host and version. The [host matrix](docs/HOSTS.md) distinguishes packaged support from that launch proof.
 

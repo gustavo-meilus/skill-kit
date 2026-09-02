@@ -1,0 +1,4 @@
+interface:
+  display_name: "Relentless Web Researcher"
+  short_description: "Deep, current, evidence-backed web research"
+  default_prompt: "Use $relentless-web-researcher to deeply research this topic, specialize in its key subtopics, and give me an evidence-backed practical synthesis."

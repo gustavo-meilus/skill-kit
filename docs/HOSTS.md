@@ -1,6 +1,6 @@
 # Host support
 
-Skill Kit is packaged for Claude Code, Codex, and Copilot CLI. This table describes the checked-in package structure; a clean-install matrix is still required before making a launch claim for a specific host version.
+Skill Kit is packaged for Claude Code, Codex, and Copilot CLI. The checked-in marketplaces currently list seven separately installable plugins. This table describes the package structure; a clean-install matrix is still required before making a launch claim for a specific host version.
 
 | Capability | Claude Code | Codex | Copilot CLI |
 | --- | --- | --- | --- |

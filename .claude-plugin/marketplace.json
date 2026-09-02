@@ -49,6 +49,13 @@
       "description": "Reduce formulaic AI-style prose artifacts while preserving facts, provenance, and voice.",
       "category": "productivity",
       "tags": ["writing", "editing", "prose", "authorship"]
+    },
+    {
+      "name": "relentless-web-researcher",
+      "source": "./plugins/relentless-web-researcher",
+      "description": "Deep, current web research with evidence and practical comparisons.",
+      "category": "productivity",
+      "tags": ["research", "web", "evidence", "comparison"]
     }
   ]
 }
