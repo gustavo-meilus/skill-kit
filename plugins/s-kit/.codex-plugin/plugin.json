@@ -1,6 +1,6 @@
 {
   "name": "s-kit",
-  "version": "1.0.0+codex.20260828192512",
+  "version": "1.0.2",
   "description": "Minimum-sufficient engineering workflow for Codex: KISS/YAGNI/least-power, progressive context, bounded agency, risk-proportional SDD, and strong verification.",
   "author": {
     "name": "Gustavo Meilus",
