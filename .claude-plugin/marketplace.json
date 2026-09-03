@@ -56,6 +56,13 @@
       "description": "Deep, current web research with evidence and practical comparisons.",
       "category": "productivity",
       "tags": ["research", "web", "evidence", "comparison"]
+    },
+    {
+      "name": "llm-knowledge-base-maintainer",
+      "source": "./plugins/llm-knowledge-base-maintainer",
+      "description": "Maintain grounded Markdown knowledge bases with synchronized LLM indexes.",
+      "category": "productivity",
+      "tags": ["knowledge-base", "markdown", "llms.txt", "manifest"]
     }
   ]
 }

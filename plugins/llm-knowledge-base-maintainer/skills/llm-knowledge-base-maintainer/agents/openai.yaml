@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Knowledge Base Maintainer"
+  short_description: "Maintain grounded Markdown knowledge bases"
+  default_prompt: "Use $llm-knowledge-base-maintainer to create or maintain this LLM-ready Markdown knowledge base and synchronize its indexes."
