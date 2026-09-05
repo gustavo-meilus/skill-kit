@@ -60,7 +60,7 @@
     {
       "name": "llm-knowledge-base-maintainer",
       "source": "./plugins/llm-knowledge-base-maintainer",
-      "description": "Maintain grounded Markdown knowledge bases with synchronized LLM indexes.",
+      "description": "Maintain grounded Markdown knowledge bases with safe source workflows and synchronized LLM indexes.",
       "category": "productivity",
       "tags": ["knowledge-base", "markdown", "llms.txt", "manifest"]
     }

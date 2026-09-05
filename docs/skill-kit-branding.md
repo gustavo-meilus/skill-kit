@@ -85,7 +85,7 @@ At present the repository has:
 - no homepage;
 - no topics;
 - no recognized license;
-- no GitHub releases;
+- only limited GitHub release history;
 - no visible community/trust layer at the repository root.
 
  

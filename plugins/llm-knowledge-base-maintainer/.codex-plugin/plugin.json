@@ -1,7 +1,7 @@
 {
   "name": "llm-knowledge-base-maintainer",
-  "version": "1.0.0",
-  "description": "Maintain grounded Markdown knowledge bases with synchronized LLM indexes.",
+  "version": "1.1.0",
+  "description": "Maintain grounded Markdown knowledge bases with safe source workflows and synchronized LLM indexes.",
   "author": {
     "name": "Gustavo Meilus",
     "email": "gmeilus@outlook.com",
@@ -13,8 +13,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "LLM Knowledge Base Maintainer",
-    "shortDescription": "Maintain grounded Markdown knowledge bases.",
-    "longDescription": "A workflow for LLM-ready Markdown references with synchronized llms.txt and manifest.jsonl indexes.",
+    "shortDescription": "Maintain grounded knowledge bases from safe source workflows.",
+    "longDescription": "A workflow for creating, updating, and attaching grounded LLM-ready Markdown references with synchronized llms.txt and manifest.jsonl indexes.",
     "developerName": "Gustavo Meilus",
     "category": "Productivity",
     "capabilities": ["Skills"],

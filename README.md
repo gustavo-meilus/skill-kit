@@ -36,7 +36,7 @@ broad cleanup                required verification
 | [More With Less](plugins/s-kit/skills/more-with-less/SKILL.md) | Minimum-sufficient engineering without weakening correctness or verification. | Skill; optional Codex completion hook |
 | [Adaptive Engineering Harness](plugins/engineering-harness-adaptive/skills/engineering-discipline/SKILL.md) | Risk-scaled engineering work that benefits from deterministic verification or isolated review. | Skill, hook, and host-specific roles |
 | [Relentless Web Researcher](plugins/relentless-web-researcher/skills/relentless-web-researcher/SKILL.md) | Deep, current research on a topic or tool with evidence and practical comparisons. | Instruction-only skill |
-| [LLM Knowledge Base Maintainer](plugins/llm-knowledge-base-maintainer/skills/llm-knowledge-base-maintainer/SKILL.md) | Grounded Markdown knowledge bases with synchronized `llms.txt` and manifest indexes. | Instruction-only skill |
+| [LLM Knowledge Base Maintainer](plugins/llm-knowledge-base-maintainer/skills/llm-knowledge-base-maintainer/SKILL.md) | Grounded Markdown knowledge bases with safe source workflows and synchronized `llms.txt` and manifest indexes. | Instruction-only skill |
 
 ### SHIP
 
