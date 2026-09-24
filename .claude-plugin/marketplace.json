@@ -9,8 +9,8 @@
   },
   "plugins": [
     {
-      "name": "s-kit",
-      "source": "./plugins/s-kit",
+      "name": "more-with-less",
+      "source": "./plugins/more-with-less",
       "description": "Minimum-sufficient engineering for project development.",
       "category": "productivity",
       "tags": ["engineering", "simplicity", "verification"]

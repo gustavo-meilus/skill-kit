@@ -42,7 +42,7 @@ The current repository contains six separately installable plugins:
 
 | Public product | Core job | Product type |
 | --- | --- | --- |
-| More With Less Engineering (`s-kit`) | Minimize unnecessary complexity without weakening guarantees | Skill plus optional hook behavior |
+| More With Less Engineering (`more-with-less`) | Minimize unnecessary complexity without weakening guarantees | Skill plus optional hook behavior |
 | Cutting a Release | Evidence-driven Git release preparation, publication, verification, and recovery | Procedural skill |
 | OpenSpec Brainstorming | Turn rough ideas into approved, validated OpenSpec changes | Planning skill |
 | Engineering Harness Adaptive | Risk-scaled engineering workflow with verification and specialist roles | Skill + agents + hooks |
@@ -277,7 +277,7 @@ I recommend shortening the human-facing labels while retaining technical slugs.
 
 | Technical slug | Preferred display name |
 | --- | --- |
-| `s-kit` | More With Less |
+| `more-with-less` | More With Less |
 | `engineering-harness-adaptive` | Adaptive Engineering Harness |
 | `openspec-brainstorming` | OpenSpec Brainstorming |
 | `cutting-a-release` | Cutting a Release |
@@ -532,7 +532,7 @@ External/search-oriented lockup when necessary:
 
 Avoid stylizing the product as `SKILLKIT`, `skillkit.ai`, or `S-KIT` at the parent level.
 
-`S-Kit` already refers to the More With Less plugin and should not simultaneously become the parent brand.
+`More With Less` is the plugin's display name. Keep `Skill Kit` as the parent brand.
 
 ---
 

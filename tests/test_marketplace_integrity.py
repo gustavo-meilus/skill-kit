@@ -15,7 +15,10 @@ def assert_package(name: str, package: Path, manifest_name: str) -> None:
         raise AssertionError(f"{name}: missing {manifest}")
     if not (package / "skills").is_dir():
         raise AssertionError(f"{name}: missing {package / 'skills'}")
-    skills = json.loads(manifest.read_text(encoding="utf-8")).get("skills")
+    manifest_data = json.loads(manifest.read_text(encoding="utf-8"))
+    if manifest_data.get("name") != name:
+        raise AssertionError(f"{name}: marketplace name does not match {manifest}")
+    skills = manifest_data.get("skills")
     if not isinstance(skills, str) or not (package / skills).is_dir():
         raise AssertionError(f"{name}: manifest skills path does not resolve")
 
@@ -34,6 +37,18 @@ class MarketplaceIntegrityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary_directory:
             with self.assertRaisesRegex(AssertionError, r"research: missing .*\\.codex-plugin"):
                 assert_package("research", Path(temporary_directory), ".codex-plugin/plugin.json")
+
+    def test_package_name_mismatch_identifies_marketplace_entry(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            package = Path(temporary_directory)
+            (package / ".codex-plugin").mkdir()
+            (package / "skills").mkdir()
+            (package / ".codex-plugin/plugin.json").write_text(
+                json.dumps({"name": "different", "skills": "./skills"}),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(AssertionError, "expected: marketplace name"):
+                assert_package("expected", package, ".codex-plugin/plugin.json")
 
 
 if __name__ == "__main__":

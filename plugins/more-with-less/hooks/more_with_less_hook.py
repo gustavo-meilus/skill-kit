@@ -3,8 +3,9 @@
 
 The hook is intentionally narrow:
 - SessionStart/SubagentStart: inject a small policy reminder.
-- Stop: if the git working tree changed, run the project's authoritative check
-  when configured via MORE_WITH_LESS_CHECK or an executable scripts/check.
+- Stop: if the git working tree has changes, run the project's authoritative
+  check when configured via MORE_WITH_LESS_CHECK, scripts/check, or
+  scripts/check.py.
 - A failing check forces at most one continuation per turn.
 
 It does not try to infer whether a dependency, abstraction, agent, or tool is
@@ -42,7 +43,7 @@ def run(argv: list[str], cwd: Path, timeout: int = 10) -> subprocess.CompletedPr
         cwd=str(cwd),
         text=True,
         stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
+        stderr=subprocess.PIPE,
         timeout=timeout,
         check=False,
     )
@@ -76,6 +77,10 @@ def project_check(root: Path) -> tuple[str, str | list[str]] | None:
     if script.is_file() and os.access(script, os.X_OK):
         return ("argv", [str(script)])
 
+    python_script = root / "scripts" / "check.py"
+    if python_script.is_file():
+        return ("argv", [sys.executable, str(python_script)])
+
     return None
 
 
@@ -101,11 +106,15 @@ def run_project_check(root: Path, command: tuple[str, str | list[str]]) -> tuple
                 if shell or git_shell.is_file():
                     argv.insert(0, shell or str(git_shell))
             result = run(argv, root, timeout=timeout)
-        return result.returncode, result.stdout or ""
+        output = "\n".join(part for part in (result.stdout, result.stderr) if part)
+        return result.returncode, output
     except subprocess.TimeoutExpired as exc:
-        partial = exc.stdout or ""
-        if isinstance(partial, bytes):
-            partial = partial.decode(errors="replace")
+        parts = (exc.stdout, exc.stderr)
+        partial = "\n".join(
+            part.decode(errors="replace") if isinstance(part, bytes) else part
+            for part in parts
+            if part
+        )
         return 124, f"Verification timed out after {timeout}s.\n{partial}"
     except OSError as exc:
         return 126, f"Could not run verification command: {exc}"
@@ -141,10 +150,10 @@ def stop_gate(data: dict[str, Any]) -> None:
         emit(
             {
                 "systemMessage": (
-                    "More With Less: the working tree changed, but no authoritative "
+                    "More With Less: the working tree has changes, but no authoritative "
                     "completion command is configured. Report only the checks and "
                     "evidence actually run; do not imply unperformed verification. "
-                    "Set MORE_WITH_LESS_CHECK or provide executable ./scripts/check "
+                    "Set MORE_WITH_LESS_CHECK or provide ./scripts/check or ./scripts/check.py "
                     "to enable the mechanical Stop gate."
                 )
             }

@@ -47,10 +47,11 @@ It runs an authoritative completion command only when:
 
 1. the working tree has changes, and
 2. one of these is available:
-   - environment variable `MORE_WITH_LESS_CHECK`, or
-   - executable `<repo>/scripts/check`.
+   - environment variable `MORE_WITH_LESS_CHECK`,
+   - executable `<repo>/scripts/check`, or
+   - `<repo>/scripts/check.py`, run with the hook's Python interpreter.
 
-If neither exists, the hook does not invent a verification command. It only warns Codex to report evidence honestly.
+If none exists, the hook does not invent a verification command. It only warns Codex to report evidence honestly.
 
 If the configured check fails, the hook forces at most one continuation. On a second failed Stop in the same turn, it allows the turn to end but warns that verification is still failing. This preserves bounded autonomy rather than creating an infinite self-correction loop.
 

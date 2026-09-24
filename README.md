@@ -33,7 +33,7 @@ broad cleanup                required verification
 
 | Skill | Use it for | Included controls |
 | --- | --- | --- |
-| [More With Less](plugins/s-kit/skills/more-with-less/SKILL.md) | Minimum-sufficient engineering without weakening correctness or verification. | Skill; optional Codex completion hook |
+| [More With Less](plugins/more-with-less/skills/more-with-less/SKILL.md) | Minimum-sufficient engineering without weakening correctness or verification. | Skill; optional Codex completion hook |
 | [Adaptive Engineering Harness](plugins/engineering-harness-adaptive/skills/engineering-discipline/SKILL.md) | Risk-scaled engineering work that benefits from deterministic verification or isolated review. | Skill, hook, and host-specific roles |
 | [Relentless Web Researcher](plugins/relentless-web-researcher/skills/relentless-web-researcher/SKILL.md) | Deep, current research on a topic or tool with evidence and practical comparisons. | Instruction-only skill |
 | [LLM Knowledge Base Maintainer](plugins/llm-knowledge-base-maintainer/skills/llm-knowledge-base-maintainer/SKILL.md) | Grounded Markdown knowledge bases with safe source workflows and synchronized `llms.txt` and manifest indexes. | Instruction-only skill |
@@ -60,11 +60,16 @@ Add the marketplace once, then install the skill that matches the job.
 
 | CLI | Add marketplace | Install a plugin |
 | --- | --- | --- |
-| Claude Code | `claude plugin marketplace add gustavo-meilus/skill-kit` | `claude plugin install s-kit@skill-kit` |
-| Codex | `codex plugin marketplace add gustavo-meilus/skill-kit` | `codex plugin add s-kit@skill-kit` |
-| Copilot CLI | `copilot plugin marketplace add gustavo-meilus/skill-kit` | `copilot plugin install s-kit@skill-kit` |
+| Claude Code | `claude plugin marketplace add gustavo-meilus/skill-kit` | `claude plugin install more-with-less@skill-kit` |
+| Codex | `codex plugin marketplace add gustavo-meilus/skill-kit` | `codex plugin add more-with-less@skill-kit` |
+| Copilot CLI | `copilot plugin marketplace add gustavo-meilus/skill-kit` | `copilot plugin install more-with-less@skill-kit` |
 
 For local development, clone this repository and use `.` in place of `gustavo-meilus/skill-kit`. To refresh a Git marketplace, use `claude plugin marketplace update skill-kit`, `codex plugin marketplace upgrade skill-kit`, or `copilot plugin marketplace update skill-kit`, then update the plugin if prompted.
+
+Existing installations use the old `s-kit` ID. Remove that installation and
+install `more-with-less` to move to the renamed package. In Codex, review and
+trust the renamed plugin's current hooks with `/hooks` before relying on its
+completion gate.
 
 The installed entry points are host-specific. Codex uses `$more-with-less`, `$lite-writing`, `$ai-fingerprint-mitigator`, `$relentless-web-researcher`, `$llm-knowledge-base-maintainer`, and `$engineering-discipline`; Claude Code uses namespaced slash commands; Copilot discovers skills from the installed plugin. See [HOSTS.md](docs/HOSTS.md) for exact packaged behavior and current verification status.
 

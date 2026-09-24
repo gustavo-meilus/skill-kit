@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "s-kit",
+      "name": "more-with-less",
       "source": {
         "source": "local",
-        "path": "./plugins/s-kit"
+        "path": "./plugins/more-with-less"
       },
       "policy": {
         "installation": "AVAILABLE",
