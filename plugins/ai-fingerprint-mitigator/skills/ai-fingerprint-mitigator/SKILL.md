@@ -45,7 +45,10 @@ Do not treat any single signal as evidence that a human or model wrote the text.
 9. Preserve the author's established voice rather than replacing it with a generic "humanized" style.
 10. Make the smallest sufficient revision. Naturalness comes from specificity and editing, not randomness.
 
-Optionally run `python3 scripts/prose_audit.py <file>` to surface formulaic style signals. The script is a heuristic writing audit, not an AI detector and not an authorship classifier.
+Optionally run `python3 scripts/prose_audit.py <file>` to surface formulaic style
+signals. Stock-phrase checks are English-specific; their findings include a line
+number and short excerpt. Document-level signals remain aggregate. The script is
+a heuristic writing audit, not an AI detector and not an authorship classifier.
 
 ## Final audit
 

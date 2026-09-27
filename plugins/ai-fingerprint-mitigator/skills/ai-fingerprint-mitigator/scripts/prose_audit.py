@@ -50,7 +50,7 @@ def sentences(text: str):
 
 
 def words(text: str):
-    return re.findall(r"[A-Za-z0-9][A-Za-z0-9'_-]*", text)
+    return re.findall(r"[^\W_]+(?:['’_-][^\W_]+)*", text)
 
 
 def audit(text: str):
@@ -61,12 +61,12 @@ def audit(text: str):
     bullets = re.findall(r"(?m)^\s*(?:[-*+] |\d+[.)]\s+)", text)
 
     hits = {}
-    lowered = text.lower()
     for group, patterns in STOCK_PATTERNS.items():
         found = []
         for pattern in patterns:
-            for match in re.finditer(pattern, lowered, flags=re.I | re.S):
-                found.append(match.group(0)[:160])
+            for match in re.finditer(pattern, text, flags=re.I | re.S):
+                line = text.count("\n", 0, match.start()) + 1
+                found.append(f"line {line}: {match.group(0)[:160]}")
         if found:
             hits[group] = found
 
@@ -101,7 +101,7 @@ def audit(text: str):
         signals.append("high_list_density")
 
     return {
-        "note": "Heuristic style audit only. This is not an AI detector or authorship classifier.",
+        "note": "Heuristic style audit only. This is not an AI detector or authorship classifier. Stock-phrase checks are English-specific.",
         "metrics": {
             "words": word_count,
             "sentences": len(sents),
